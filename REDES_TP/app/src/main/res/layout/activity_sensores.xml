@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lectura de Sensores"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <!-- SENSOR 1: ACELERÓMETRO -->
+    <TextView
+        android:id="@+id/tvAcelerometro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Acelerómetro: Esperando datos..."
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- SENSOR 2: LUZ -->
+    <TextView
+        android:id="@+id/tvLuz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sensor de Luz: Esperando datos..."
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- SENSOR 3: PROXIMIDAD -->
+    <TextView
+        android:id="@+id/tvProximidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proximidad: Esperando datos..."
+        android:textSize="18sp"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/btnVolverSensores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:text="Volver al inicio" />
+
+</LinearLayout>

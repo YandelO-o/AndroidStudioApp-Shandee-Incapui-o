@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- 1. TOCAR UN BOTÓN Y CAMBIAR UN TEXTVIEW -->
+        <TextView
+            android:id="@+id/tvMensaje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Texto original"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnCambiarTexto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#2196F3"
+            android:text="Cambiar Texto"
+            android:textColorLink="#673AB7" />
+
+        <!-- 2. DOS INPUTS PARA SUMAR Y MOSTRAR RESULTADO -->
+        <EditText
+            android:id="@+id/etNumero1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingresá el primer número"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/etNumero2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingresá el segundo número"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnSumar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#2196F3"
+            android:text="Sumar"
+            android:textColorLink="#673AB7" />
+
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resultado: -"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- 3. LOGIN CON INTENTOS Y BLOQUEO TEMPORAL -->
+        <EditText
+            android:id="@+id/etUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Usuario" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#2196F3"
+            android:text="Iniciar Sesión" />
+
+        <TextView
+            android:id="@+id/tvEstadoLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intentos restantes: 3"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnIrSensores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#2196F3"
+            android:text="Ver Sensores" />
+
+    </LinearLayout>
+</ScrollView>
